@@ -15,7 +15,7 @@ Note: Tested only on JDK8 Intellij-Idea OSX
 ###Design Overview:###
     parse:
         condition package contains the logic of query operators
-        Query takes a String as input and converts it into conditional 
+        Query takes a string as input and converts it into conditional
         operators
     Model:
         Collection defines generic collection behaviour using java reflection
@@ -29,7 +29,7 @@ Note: Tested only on JDK8 Intellij-Idea OSX
         the program
         ShellRunner provides main method for initialisation and running the shell.
     Test:
-        test.py contains simple integration test for collection.
+        Test contains simple manual test.
 
 
 ###Assumptions Made:###

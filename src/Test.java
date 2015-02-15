@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class Test {
     public static void main(String[] args) {
-        String query = "brand = 'BRAND A' or (not (color = 'Yellow' and availability='y'))";
+        String query = "(brand = 'BRAND A' or (not color = 'Yellow')) and (not (brand = 'BRAND B'))";
         Collection<Product> productCollection = new Collection<Product>();
         CommandManager commandManager = new CommandManager(productCollection);
         for (Product product : ProductData.getProductData()) {
